@@ -1,0 +1,132 @@
+1. Difference between webpage and website:
+Webpage: A single document or page on the internet, typically written in HTML. It could be part of a larger website. Example: a product page on Amazon.
+Website: A collection of webpages that are interlinked and hosted under one domain name. Example: www.amazon.com.
+
+2. What is SPA and MPA?
+SPA (Single-Page Application): A web app that interacts with the user by dynamically rewriting the current page instead of loading new pages from the server. Example: Gmail, Trello.
+MPA (Multi-Page Application): A traditional web app where each user action loads a new page. Example: e-commerce websites like Amazon.
+
+3. What is HTML and meta tag?
+HTML: HyperText Markup Language is used to structure content on the web.
+Meta Tag: Provides metadata about an HTML document (e.g., description, author, charset, etc.). Example:
+html
+Copy code
+<meta name="description" content="Learn about HTML meta tags">
+
+4. How to automatically refresh a webpage after a specific time?
+Use the meta tag with http-equiv="refresh". Example:
+
+html
+Copy code
+<meta http-equiv="refresh" content="10">
+This refreshes the page every 10 seconds.
+
+5. What are the tag and attributes?
+Tag: Basic building block of HTML, enclosed in < >. Example: <div>.
+Attribute: Additional information about a tag, written inside the tag. Example:
+html
+Copy code
+<img src="image.jpg" alt="Description">
+
+6. What is a void element?
+An HTML element that does not have a closing tag and cannot contain content. Example: <img>, <br>, <input>.
+
+7. How can we insert an image in a webpage?
+Use the <img> tag. Example:
+
+html
+Copy code
+<img src="image.jpg" alt="Image Description">
+
+8. What is the difference between class and id attribute in HTML?
+Class: Can be applied to multiple elements and is used for grouping. Example:
+html
+Copy code
+<div class="group"></div>
+ID: Unique identifier for an element, used only once in a page. Example:
+html
+Copy code
+<div id="unique"></div>
+
+9. What is the difference between inline and block-level elements?
+Inline Elements: Do not start on a new line and take up only as much width as necessary. Example: <span>.
+Block-Level Elements: Start on a new line and take up the full width. Example: <div>.
+
+10. What are the formatting tags?
+Tags used for text styling. Example:
+
+<b>: Bold
+<i>: Italic
+<u>: Underline
+
+11. What is HTML semantic tag?
+Semantic tags clearly describe their meaning to both developers and browsers. Examples: <header>, <footer>, <article>, <section>.
+
+12. What is picture tag?
+Allows different images to be displayed based on conditions like screen size. Example:
+
+html
+Copy code
+<picture>
+  <source media="(min-width: 650px)" srcset="large.jpg">
+  <img src="default.jpg" alt="Description">
+</picture>
+
+13. HTML entities:
+Special characters in HTML represented with a code. Example:
+
+&nbsp; → Space
+&lt; → <
+
+14. Types of lists in HTML:
+Ordered List <ol>: Numbered items.
+Unordered List <ul>: Bullet points.
+Description List <dl>: Key-value pairs.
+
+15. What are the form elements?
+HTML elements to collect user input:
+
+<input>
+<textarea>
+<button>
+<select>
+
+16. Types of inputs:
+Input types in HTML:
+
+Text (<input type="text">)
+Number (<input type="number">)
+Email (<input type="email">)
+
+17. Form validation attributes:
+Built-in attributes for validation:
+
+required
+minlength
+pattern
+
+18. What is iframe tag?
+Used to embed another webpage within a webpage. Example:
+
+html
+Copy code
+<iframe src="https://example.com"></iframe>
+
+19. How can we insert media?
+Audio: <audio src="audio.mp3" controls></audio>
+Video: <video src="video.mp4" controls></video>
+
+20. How to add Google map?
+Embed using an iframe:
+
+html
+Copy code
+<iframe src="https://www.google.com/maps/embed?..."></iframe>
+
+21. Difference between <a> and <link> tag:
+<a>: Defines a hyperlink.
+<link>: Used to link external resources like stylesheets.
+
+22. Difference between HTML older version and new version:
+HTML4: Relied heavily on <div> for structure, lacked semantic tags.
+HTML5: Introduced semantic elements (<header>, <footer>, etc.) and multimedia support.
