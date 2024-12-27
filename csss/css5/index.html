@@ -1,0 +1,149 @@
+<!-- 
+ notes:- box models-in css each and every element and it contain padding , margin ,border;
+
+ margin:-it is a space out side the border
+        if u wandt to move the whole container we can use margin property
+
+        syntax:-
+       * short hand
+        margin: _ _ _ _ ;
+             top left buttom right;
+
+             margin : _ _ ;
+                    t/b  l/r;
+             margin : _ _;
+              t&l b&r;
+     * long hand property
+     margin-left: _;
+     margin-top: _;
+     margin-buttom: _;
+     margin-right: _;
+   
+
+        padding:- it is a space between border and contain
+                  if we want to move the contain we can go with padding property
+
+
+                    syntax:-
+       * short hand
+        padding: _ _ _ _ ;
+             top left buttom right;
+
+             padding : _ _ ;
+                    t/b  l/r;
+             padding : _ _;
+              t&l b&r;
+     * long hand property
+     padding-left: _;
+     padding-top: _;
+     padding-buttom: _;
+     padding-right: _;
+
+
+**  border :- it is line go around the contain
+     border-style { solid| dashed| dotted | groove}
+     syntax :-
+     *long-hand 
+     border: 1px dotted solid black;
+     * short-hand
+     border-width: 3px;
+     border-style:_;
+     border-top:_;
+     border-color:_;
+
+     outline :- similer to border and it exist outside the border 
+     syntex :-
+     outline : outline -width outline -style  outline-color;
+     outline-offset : ; give gap between the border and outline
+
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .nn {
+        width: 400px;
+        height: 380px;
+        background-color: #0a98a56e;
+        border: 2px solid black;
+        margin-left: 37%;
+        margin-top: 12%;
+        position: relative;
+      }
+
+      .child {
+        top: 9px;
+        width: 95%;
+        height: 95%;
+        background-color: #13b8bbc6;
+        border: 2px solid rgba(0, 0, 0, 0.748);
+        padding-top: 168.5px;
+        padding-left: 166.5px;
+        box-sizing: border-box;
+        margin: 10px 0 10px 0;
+        position: absolute;
+      }
+
+      .pr {
+        width: 250px;
+        height: 250px;
+        background-color: #2492f2ae;
+        border-top: 10px double black;
+        border-right: 10px double black;
+        /* border: 2px solid black; */
+      }
+      .cr {
+        width: 250px;
+        height: 250px;
+        background-color: #007eecc8;
+        border-top: 10px solid rgb(0, 0, 0);
+        border-right: 10px solid black;
+        border-left: 10px solid rgba(255, 255, 255, 0);
+        border-bottom: 10px solid rgba(0, 0, 0, 0.767);
+        margin-left: 37%;
+        margin-bottom: 12%;
+        border-radius: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nn">
+      <div class="child">
+        <h3>hello</h3>
+      </div>
+    </div>
+
+    <div class="pr"></div>
+
+    <div class="cr"></div>
+
+
+
+
+    <div style="height: 500px; width: 500px; background-color: #fff700; display: flex; position: relative; border: 10px solid  white;">
+      <div style="height: 450px; width: 450px; background-color: #31119c; position: absolute; top: 20px; left: 15px; border: 10px solid  white;"></div>
+      <div style="height: 400px; width: 400px; background-color: #6d0d1a;position: absolute; top: 45px; left: 40px; border: 10px solid  white;" >
+        <img style="width: 100%; height: 100%;" src="https://images.unsplash.com/photo-1734375181552-cfa83d404033?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8" alt="">
+      </div>
+    </div>
+
+
+    
+
+
+    <img style="height: 500px; width: 500px; border: 10px solid  rgb(228, 13, 13); padding: 30px; outline: 30px;" src="https://images.unsplash.com/photo-1732452792153-6d244db8dc01?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8" alt="">
+
+
+
+
+  </body>
+</html>
