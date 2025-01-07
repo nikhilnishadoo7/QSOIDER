@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #main{
+      height: 100px;
+      width: 100%;
+      background-color: #0d2449;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    #logo{
+        height: 50px;
+        width: 10%;
+        background-color: #0d2449;
+        
+    }
+    img{
+        border-radius: 100%;
+        height: 70px;
+        width: 50%;
+        margin-left: 40px;
+        margin-top: 15px;
+        
+    }
+    #search-bar{
+        height: 100px;
+        width: 70%;
+        background-color: #0d2449;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    input{
+        font-size: 40px;
+        border-radius:20px 0 0 20px;
+        width: 80%;
+        text-decoration: none;
+        
+    }
+    #icon{
+        background-color: #fffb00e8;
+        height: 47px;
+        width: 49px;
+        font-size: 30px;
+        padding: 10px;
+        border-radius:0 20px 20px 0 ;
+    }
+
+    #login{
+        height: 100px;
+        width: 30%;
+        background-color: #0d2449;
+    }
+    #login{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .btn{
+        height: 50px;
+        width: 100px;
+        background-color: #f70000;
+        margin-top: 20px;
+        color: #fff;
+        font-size: larger;
+        border-radius: 10px;
+    }
+    .btnb1{
+        height: 50px;
+        width: 100px;
+        background-color: #0008f7;
+        margin-top: 20px;
+        color: #fff;
+        font-size: larger;
+        border-radius: 10px;
+       
+    }
+</style>
+<body>
+    <nav>
+        <div id="main">
+            <div id="logo"> <img height="100px" width="100px" src="https://images.unsplash.com/photo-1584441405886-bc91be61e56a?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZseSUyMGxvZ298ZW58MHx8MHx8fDA%3D" alt=""></div>
+            <div id="search-bar"><input type="search">
+            <div><i id="icon" class="fa-solid fa-magnifying-glass"></i></div></div>
+            <div id="login">
+                <button class="btn">login</button>
+                <button class="btnb1">register</button>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
