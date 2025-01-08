@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cnt{
+          height: 100vh;
+          width: 100vw;
+          background: #2aa21f;
+          display: grid;
+          grid-template-rows: 10vh 60vh 30vh;
+          grid-template-columns: 20vw repeat(2,40vw);
+          grid-template-areas: "head head head " "aside article article" "foot foot foot";
+        }
+        header{
+            background-color: #065ba5;
+            grid-area: head;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        aside{
+            background-color: #ffffff;
+            grid-area: aside;
+            display: flex;
+            align-content: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            padding: 20px;
+        }
+        section{
+            background-color: #949799;
+            grid-area: article;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+        }
+        footer{
+            background-color: #ffffff;
+            grid-area: foot;
+        }
+        input{
+        font-size: 20px;
+        padding: 11.5px;
+        border-radius:20px 0 0 20px;
+        width: 80%;
+        text-decoration: none;
+        
+    }
+        #icon{
+        background-color: #00ffb7e8;
+        height: 27px;
+        width: 29px;
+        font-size: 30px;
+        padding:10px;
+        border-radius:0 20px 20px 0;
+        
+    }
+    .search-bar{
+        height: 100px;
+        width: 60%;
+        background-color: #065ba5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    button{
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        margin-right: 20px;
+        background-color: rgba(255, 0, 0, 0.72);
+    }
+    .logo{
+        border-radius: 100%;
+        height: 60px;
+        width: 60px;
+    }
+    .product{
+        height: 80%;
+        width: 40%;
+        border: 2px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .product img{
+        height: 80%;
+        width: 80%;
+        object-fit: cover;
+    }
+    h4{
+        margin: 5px;
+        font-size: 20px;
+    }
+    p{
+      font-size: 20px;  
+    }
+    .span{
+        color: rgba(255, 0, 0, 0.643);
+    }
+    .filter{
+        font-size: 20px;
+        margin: 20px;
+    }
+    </style>
+</head>
+<body>
+   <div class="cnt">
+    <header class="box">
+            <img class="logo" src="https://images.unsplash.com/photo-1662027067763-770376e710f5?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        
+        <div class="search-bar">
+            <input type="search">
+            <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+        <div>
+            <button>login</button>
+            <button>Register</button>
+        </div>
+    </header>
+    <aside class="box">
+        <h5 class="filter">Filters</h5>
+        <p>CATEGORIES</p>
+        <p>< Computers</p>
+        <p>< Computer Components</p>
+        <label for="">Price</label>
+        <input type="range" min="5" max="10" step="0.5" />
+        
+    </aside>
+    <section class="box">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1612222869049-d8ec83637a3c?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <h4>Women Shapewear</h4>
+            <p>Price :<span class="span">5000</span></p>
+        </div>
+        <div class="product">
+            <img src="https://plus.unsplash.com/premium_photo-1664202526047-405824c633e7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="">
+            <h4>Women Shapewear</h4>
+            <p>Price :<span class="span">7000</span></p>
+        </div>
+    </section>
+    
+        <footer class="box" style="background-color: #333; color: #fff; padding-top: 40px;">
+            <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+                <div style="flex: 1; text-align: center;">
+                    <h3 style="margin-bottom: 10px;">Flipkart</h3>
+                    <p style="font-size: 14px;">© 2024 Flipkart.com, All Rights Reserved</p>
+                </div>
+                
+                <div style="flex: 2; display: flex; justify-content: space-evenly;">
+                    <div style="text-align: center;">
+                        <h4 style="margin-bottom: 10px;">Company</h4>
+                        <p style="font-size: 14px;">About Us</p>
+                        <p style="font-size: 14px;">Careers</p>
+                        <p style="font-size: 14px;">Flipkart Stories</p>
+                        <p style="font-size: 14px;">Press</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="margin-bottom: 10px;">Help</h4>
+                        <p style="font-size: 14px;">Customer Care</p>
+                        <p style="font-size: 14px;">Track Order</p>
+                        <p style="font-size: 14px;">Shipping</p>
+                        <p style="font-size: 14px;">Return Policy</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="margin-bottom: 10px;">Policies</h4>
+                        <p style="font-size: 14px;">Terms of Use</p>
+                        <p style="font-size: 14px;">Privacy</p>
+                        <p style="font-size: 14px;">Security</p>
+                        <p style="font-size: 14px;">Sitemap</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div style="text-align: center; padding-top: 20px; border-top: 1px solid #444;">
+                <p style="font-size: 14px;">Follow us on: 
+                    <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none;">Facebook</a>
+                    <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none;">Instagram</a>
+                    <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none;">Twitter</a>
+                </p>
+            </div>
+        </footer>
+    
+
+   </div>
+</body>
+</html>
