@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbb{
+    background-color: #757576d7;
+}
+.bg-light{
+    background-color: rgb(255, 0, 0);
+}
+.btnn{
+    padding: 8px;
+    background-color: black;
+}
+.alink{
+    color: #ffffff;
+    font-size: larger;
+    text-decoration: none;
+    
+
+}
+.btnn :hover{
+    background-color: #ffffff;
+     color: #000000;
+}
+
+.full{
+    width: 80%;
+   margin:0% 5%;
+   
+
+}
+.fulll{
+    padding: 0px 25px;
+}
+.push{
+    margin-top: 20%;
+}
+
+.cr{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+.disp{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.imgpdt{
+    height: 500px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    object-fit: cover;
+    /* margin-left: 25%; */
+    padding: 20px;
+}
+/* 
+.bbb{
+    margin-left: 5px;
+} */
+ .paymentoption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .paymentoption img{
+    width:90%;
+    height: 70%;
+ }
+
+ .giftsection img{
+    width: 80%;
+    height: 60%;
+ }

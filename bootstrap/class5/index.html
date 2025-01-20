@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .aside1{
+         height: 95vh;
+         width: 25%;
+         background-color: green;
+            transition: all 1s ease-in-out;
+          
+        }
+        #hm{
+            display: none;
+        }
+        #hm:checked+.aside1{
+            width: 0px;
+        }
+        .hmb{
+            position: absolute;
+            left: 43vh;
+            font-size: 30px;
+            /* transition: all 1s linear; */
+        }
+        #icon:checked::after{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <label for="hm" class="hmb">
+        <i class="fa-solid fa-bars" id="icon"></i>
+    </label>
+    <input id="hm" type="checkbox">
+    <aside class="aside1">
+
+    </aside>
+</body>
+</html>

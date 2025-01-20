@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            border-left: 350px solid white;
+            border-right: 350px solid white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #EBB96A, #CB7E4F);
+        }
+
+        .card {
+            display: flex;
+            width: 550px;
+            height: 450px;
+            border-radius: 5px;
+            padding: 5%;
+            overflow: hidden;
+            background: #fff;
+            /* border: 3px solid black; */
+            box-shadow: 20px 15px 20px 15px rgba(0, 0, 0, 0.549);
+  
+        }
+
+        .profile-section {
+            justify-self: center;
+            align-self: center;
+            flex: 2;
+            text-align: center;
+            padding:20px 20px;
+            gap: 5px;
+        }
+
+        .profile-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            
+            /* padding: 10px 10px; */
+        }
+
+        .outer-ring {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #000000ab;
+            border-top: 3px solid transparent;
+            animation: spin 3s linear infinite;
+            margin-bottom: 30px;
+        }
+
+        .inner-ring {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            /* right: -5px;
+            bottom: -5px; */
+            width: 110px;g
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid #000000be;
+            border-top: 3px solid transparent;
+            animation: spin 3s linear infinite reverse;
+        }
+
+        .profile-image img {
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        h2 {
+            margin: 10px 0 5px;
+            color: #7a5e49;
+            font-size: 18px;
+        }
+
+        p {
+            color: #b49987;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: block;
+            width: 100px;
+            margin: 10px auto;
+            padding: 8px 0;
+            border: 1px solid #7a5e49;
+            border-radius: 20px;
+            background: none;
+            color: #7a5e49;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #7a5e49;
+            color: #fff;
+        }
+
+        .stats-section {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .stat {
+            height: 150px;
+            background: #d1b09993;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .stat h3 {
+            color: #7a5e49;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .stat p {
+            color: #b49987;
+            font-size: 14px;
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="profile-section">
+            <div class="profile-image">
+                <div class="outer-ring"></div>
+                <div class="inner-ring"></div>
+                <img src="https://imgs.search.brave.com/GQB4Gs3PF-jnPKUObtPV7nZStSwVYneuM9TtA1UBD_s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMxLmNvbGxpZGVy/aW1hZ2VzLmNvbS93/b3JkcHJlc3Mvd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMTIv/aG9tZWxhbmRlci1i/bG9vZHktdGhlLWJv/eXMtc2Vhc29uLTQu/anBn" alt="Jessica Potter">
+            </div>
+            <h2>Jessica Potter</h2>
+            <p>Visual Artist</p>
+            <button class="btn">Follow</button>
+            <button class="btn">Message</button>
+        </div>
+        <div class="stats-section">
+            <div class="stat">
+                <h3>523</h3>
+                <p>Posts</p>
+            </div>
+            <div class="stat">
+                <h3>1387</h3>
+                <p>Likes</p>
+            </div>
+            <div class="stat">
+                <h3>146</h3>
+                <p>Followers</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
