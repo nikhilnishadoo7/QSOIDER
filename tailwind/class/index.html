@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" h-full bg-gray-900 dark:bg-gray-200 cent ">
+        <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg nav">
+            <div class="flex-1 flex justify-between items-center">
+                <img class="sm:w-[10rem] w-[7rem]" src="https://imgs.search.brave.com/FGeMO2rO5mkhPFwE9cibVYcKih7YGYW8PznA3NzZ52k/rs:fit:860:0:0:0/g:ce/aHR0cDovL2xvZ29z/LnRleHRnaXJhZmZl/LmNvbS9sb2dvcy9s/b2dvLW5hbWUvTmlr/aGlsLWRlc2lnbnN0/eWxlLWZyaWRheS1t/LnBuZw" alt="Logo" />
+            </div>
+            <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                <svg class="fill-current text-gray-200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+                </label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+    
+            <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+                <nav>
+                    <ul class="md:flex items-center justify-between text-base text-gray-100 dark:text-gray-800 pt-4 md:pt-0">
+                        <li><a class="md:p-4 py-3 px-0 block text-rose-500" href="#">Home</a></li>
+                        <li><a class="md:p-4 py-3 px-0 block" href="#">About Me</a></li>
+                        <li><a class="md:p-4 py-3 px-0 block" href="#">Education</a></li>
+                        <li><a class="md:p-4 py-3 px-0 block" href="#">Experience</a></li>
+                        <li><a class="md:p-4 py-3 px-0 block" href="#">Projects</a></li>
+                        <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <div
+            class="h-full w-full mx-auto relative top-12 pb-20 xl:px-16 px-8 flex md:flex-row flex-col gap-4 justify-center items-center pb-10 pt-4 cent">
+            <div class="w-full relative">
+                <img class="shadow-2xl shadow-rose-600 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto" src="https://imgs.search.brave.com/TSXqAOBF-50vN9Ofv6cS95SFvmpTxiSuQGmY3whpzys/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTgy/MTkwMzUwL3Bob3Rv/L2VuZXJneS12b3J0/ZXguanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPXVvODZTNzJV/Yy1jZDlBTXVkTmdi/ek13SzlyZElFekVz/VjRieHFxUlI4NTQ9" alt="My Image" />
+                <img class="relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto p-5 outline outline-[.7rem] outline-offset-[.1rem] outline-rose-400/30" src="./pf2.jpg" alt="My Image" />
+            </div>
+            <div class="w-full flex flex-col justify-center gap-4 md:text-left text-center text-white dark:text-gray-800 md:mt-0 sm:mt-8 mt-4">
+                <h1 class="md:text-4xl sm:text-3xl text-2xl font-semibold font-serif">Hello, My name is Nikhil Nishad</h1>
+                <h3 class="capitalize text-rose-400">i'm <span class="typing text-green-500 dark:text-green-700">fullstack developer</span></h3>
+                <p>Experienced full-stack developer with 4+ years of expertise in Laravel, NestJS, Nuxt.js, Next.js,
+                    Android, and some Flutter experience.</p>
+                <div class="sm:mt-4 mt-2">
+                    <button class="px-6 py-1 bg-rose-500 text-white rounded-sm" id="clickk">Get In Touch</button>
+
+                    <a href="Nikhi_Nishad_Resume.pdf" download="Nikhi_Nishad_Resume">
+                    <button class="px-6 py-1 bg-green-500 text-white rounded-sm" id="resume">download</button>
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script>
+        var typed = new Typed('.typing', {
+        strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],
+        typeSpeed: 100,
+        BackSpeed: 60,
+        loop: true
+    })
+    tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+    }
+  }
+}
+    </script>
+    <!-- start -->
+    <div class="hidden fixed inset-0 z-40 min-h-full overflow-y-auto overflow-x-hidden transition flex items-center" id="modal"> >
+        <!-- overlay -->
+        <div aria-hidden="true" class="fixed inset-0 w-full h-full bg-black/50 cursor-pointer">
+        </div>
+      
+        <!-- Modal -->
+        <div class=" relative w-full cursor-pointer pointer-events-none transition my-auto p-4">
+          <div
+            class="w-full py-2 bg-white cursor-default pointer-events-auto dark:bg-white-200 relative rounded-xl mx-auto max-w-sm">
+      
+            <button type="button" class="absolute top-2 right-2 rtl:right-auto rtl:left-2" id="close-modal">
+                      <svg xlinkTitle="Close" class="h-4 w-4 hover:rotate-180 transition-all ease-in-out duration-500 cursor-pointer text-gray-400"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clipRule="evenodd"></path>
+                      </svg>
+                      <span class="sr-only">
+                        Close
+                      </span>
+                    </button>
+      
+      
+      
+            <div class="space-y-2 p-2">
+              <div class="p-2 space-y-2 text-center dark:text-dark-800">
+                <h2 class="text-xl font-bold tracking-tight" id="page-action.heading">
+                  Let me reach you
+                </h2>
+                <p class="text-gray-500">
+                  Are you sure you would like to do this?
+                </p>
+              </div>
+            </div>
+      
+            <div class="space-y-2">
+              <div aria-hidden="true" class="border-t border-gray-700 px-2"></div>
+      
+              <div class="grid grid-cols-1 place-items-center px-4 py-2">
+                <form noValidate class="space-y-4">
+                  <div>
+                    <label htmlFor="Full Name" class="mb-2 text-gray-400 text-lg">Full Name<span class="text-red-600 inline-block p-1 text-sm">*</span></label>
+                    <input
+                              id="Full Name"
+                              class="border p-3 shadow-md  border-gray-700 placeholder:text-base focus:outline-none ease-in-out duration-300 rounded-lg w-full"
+                              type="text"
+                              placeholder="Full Name"
+                              required
+                            />
+                  </div>
+                  <div>
+                    <label htmlFor="email" class="mb-2 text-gray-400 text-lg">Email<span class="text-red-600 inline-block p-1 text-sm">*</span></label>
+                    <input
+                              id="email"
+                              class="border p-3  border-gray-700 shadow-md placeholder:text-base focus:outline-none ease-in-out duration-300 rounded-lg w-full"
+                              type="email"
+                              placeholder="Email"
+                              required
+                            />
+                  </div>
+                  <div>
+                    <label htmlFor="subject" class="mb-2 text-gray-400 text-lg">Subject<span class="text-red-600 inline-block p-1 text-sm">*</span></label>
+                    <input
+                              id="subject"
+                              class="border p-3  border-gray-700 shadow-md placeholder:text-base focus:outline-none ease-in-out duration-300 rounded-lg w-full"
+                              type="text"
+                              placeholder="subject"
+                              required
+                            />
+                  </div>
+                  <div>
+                    <label htmlFor="Message" class="mb-2 text-gray-400 text-lg">Message<span class="text-red-600 st inline-block p-1 text-sm">*</span></label>
+                    <textarea
+                              id="Message"
+                              class="border p-3  border-gray-700 shadow-md placeholder:text-base focus:outline-none ease-in-out duration-300 rounded-lg w-full"
+                              placeholder="Message"
+                              required
+                            ></textarea>
+                  </div>
+                </form>
+              </div>
+      
+              <div aria-hidden="true" class="border-b border-gray-700 px-2"></div>
+              <div class="px-6 py-2">
+                <div class="grid gap-2 grid-cols-[repeat(auto-fit,minmax(0,1fr))]">
+                  <button type="button"
+                            class="inline-flex items-center justify-center py-1 gap-1 font-medium rounded-lg border transition-colors outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset dark:focus:ring-offset-0 min-h-[2.25rem] px-4 text-sm text-gray-800 bg-white border-gray-300 hover:bg-gray-50 focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-600 dark:hover:border-gray-500 dark:text-gray-200 dark:focus:text-primary-400 dark:focus:border-primary-400 dark:focus:bg-gray-800">
+                            Cancel
+                          </button>
+      
+                  <button type="submit"
+                            class="inline-flex items-center justify-center py-1 gap-1 font-medium rounded-lg border transition-colors outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset dark:focus:ring-offset-0 min-h-[2.25rem] px-4 text-sm text-white shadow focus:ring-white border-transparent bg-[#4d1b80] hover:bg-[#7127BA] focus:bg-[#11071F] focus:ring-offset-[#11071F]">
+      
+                            <span class="flex items-center gap-1">
+                              <span class="">
+                                Send
+                              </span>
+                            </span>
+                          </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.getElementById('clickk').addEventListener('click',  () => {
+          document.getElementById('modal').style.display = 'block'
+        })
+        // document.querySelector('.absolute').addEventListener('click',  ()=> {
+        //   document.getElementById('modal').classList.add('hidden')
+
+        // })
+     
+          document.getElementById('close-modal').addEventListener('click', ()=> {
+            document.getElementById('modal').style.display = 'none'
+          })
+
+          document.getElementById('resume').addEventListener('click', ()=> {
+          doucment
+          })
+      </script>
+      
+
+<!-- about me -->
+ <div id="abt" class="grid sm:grid-col-1 md:grid-cols-2 m-8">
+  <div class=" flex justify-center"> <img  style="height: 100%; width: 50%;  object-fit: cover; border-top: 10px double rgb(255, 255, 255);
+  border-left: 10px double rgb(255, 251, 251);border-bottom: 9px double rgb(255, 255, 255); border-right: 10px double rgb(255, 251, 251); padding:12px 12px 12px 12px; border-radius: 8px 0 0 8px ;" src="./pf2.jpg" alt=""></div>
+  <div class="abb">
+    <h1 class="aboutme"><span>About </span>Me
+    </h1>
+    <p class="abouthd">FullStack Developer</p>
+    <p class="aboutmedpt">A passionate Software Engineer from India.</p>
+    <div class="abbb">
+      <ul class="slillcnt">
+        <li>Java</li>
+        <li>React Js</li>
+        <li>Web Developer</li>
+        <li>Node js</li>
+        <li>C++</li>
+        <li>SQL</li>
+        <li>Project management</li>
+      </ul>
+    </div>
+  </div>
+
+ </div>
+
+ <!-- project -->
+ <section class="py-16 px-4 bg-white pdd">
+  <div class="max-w-7xl mx-auto text-center p-8 pbb">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Our Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+              <video src="./p1.mp4" autoplay controls loop alt="Project 1" class="w-full h-48 object-cover"></video>
+              <div class="p-6">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-2">MovieO</h3>
+                  <p class="text-gray-600 mb-4">It showcases the latest trending movies and TV series with detailed information such as ratings, genres, and
+                    release dates.
+                    </p>
+                  <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Details</a>
+              </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+            <video src="./393651669-8c44905a-cbce-4dee-8a87-d75518683a57.mp4" autoplay controls loop alt="Project 1" class="w-full h-48 object-cover"></video>
+              <div class="p-6">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Master Gang</h3>
+                  <p class="text-gray-600 mb-4">A platform where teachers create classrooms, send timetables, and messages, while students join with OTPs without exposing
+                    personal info.
+                    I Built with React.js, Node.js, MongoDB, using JWT for secure login and bcrypt for password security</p>
+                  <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Details</a>
+              </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+            <video src="./ddd.mp4" autoplay controls loop alt="Project 1" class="w-full h-48 object-cover"></video>
+              <div class="p-6">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Restaurant Website</h3>
+                  <p class="text-gray-600 mb-4">Tasty Bites Restaurant welcomes you to indulge in a culinary journey filled with delicious flavors and exquisite dishes. Our restaurant offers a cozy ambiance, friendly service, and a menu curated with a blend of local and international cuisines.</p>
+                  <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Details</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+ <!-- project end -->
+  <div class="flex justify-center m-8" id="vvv">
+    <img src="./img2.jpg" class="md:hidden" width="100%" height="600px"/>
+      <img src="./dd.jpg" class=" hidden md:block " alt="">
+      
+  
+  </div>
+
+<!-- <div class="bg-gradient-to-r from-indigo-800 to-blue-900 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-4xl w-full p-8 transition-all duration-300 animate-fade-in">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/3 text-center mb-8 md:mb-0">
+                <img src="https://i.pravatar.cc/300" alt="Profile Picture" class="rounded-full w-48 h-48 mx-auto mb-4 border-4 border-indigo-800 dark:border-blue-900 transition-transform duration-300 hover:scale-105">
+                <h1 class="text-2xl font-bold text-indigo-800 dark:text-white mb-2">John Doe</h1>
+                <p class="text-gray-600 dark:text-gray-300">Software Developer</p>
+                <button class="mt-4 bg-indigo-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors duration-300">Edit Profile</button>
+            </div>
+            <div class="md:w-2/3 md:pl-8">
+                <h2 class="text-xl font-semibold text-indigo-800 dark:text-white mb-4">About Me</h2>
+                <p class="text-gray-700 dark:text-gray-300 mb-6">
+                    Passionate software developer with 5 years of experience in web technologies. 
+                    I love creating user-friendly applications and solving complex problems.
+                </p>
+                <h2 class="text-xl font-semibold text-indigo-800 dark:text-white mb-4">Skills</h2>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">React</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Python</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">SQL</span>
+                </div>
+                <h2 class="text-xl font-semibold text-indigo-800 dark:text-white mb-4">Contact Information</h2>
+                <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-800 dark:text-blue-900" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        john.doe@example.com
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-800 dark:text-blue-900" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        +1 (555) 123-4567
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-800 dark:text-blue-900" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                        </svg>
+                        San Francisco, CA
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </styl>
+
+    <script>
+        // Toggle dark mode based on system preference
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+
+        // Add hover effect to skill tags
+        const skillTags = document.querySelectorAll('.bg-indigo-100');
+        skillTags.forEach(tag => {
+            tag.addEventListener('mouseover', () => {
+                tag.classList.remove('bg-indigo-100', 'text-indigo-800');
+                tag.classList.add('bg-blue-900', 'text-white');
+            });
+            tag.addEventListener('mouseout', () => {
+                tag.classList.remove('bg-blue-900', 'text-white');
+                tag.classList.add('bg-indigo-100', 'text-indigo-800');
+            });
+        });
+    </script> -->
+<!-- <</div> -->
+       <!-- crousel -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Sliding Carousel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Carousel animation */
+      @keyframes slide {
+        0% {
+          transform: translateX(0%);
+        }
+        20% {
+          transform: translateX(0%);
+        }
+        25% {
+          transform: translateX(-100%);
+        }
+        45% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(-200%);
+        }
+        70% {
+          transform: translateX(-200%);
+        }
+        75% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+  
+      .carousel {
+        display: flex;
+        animation: slide 12s infinite;
+      }
+  
+      .carousel-item {
+        flex: 0 0 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white all" >
+    <div class="max-w-7xl mx-auto p-6 "id="vv">
+      <!-- Title -->
+      <div class="text-center mb-6" >
+        <h1 class="text-3xl font-bold">Customer testimonial</h1>
+        <p class="text-gray-600 dark:text-gray-400">Here's what our customers said.</p>
+      </div>
+  
+      <!-- Carousel Wrapper -->
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <!-- Carousel -->
+        <div class="carousel">
+          <!-- Slide 1 -->
+          <div class="carousel-item bg-white dark:bg-gray-800 p-6">
+            <div class="p-4">
+              <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+                <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-full rounded-full mx-auto object-cover" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=2648&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="384" height="512">
+                <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                  <blockquote>
+                    <p class="text-lg font-medium dark:text-slate-100">
+                      "This site always delivers an amazing shopping experience. It’s easy to browse, and I always get my orders on time. The prices are great, too!"
+                    </p>
+                  </blockquote>
+                  <figcaption class="font-medium">
+                    <div class="text-sky-500 dark:text-sky-400">
+                      Vikas Kumar
+                    </div>
+                    <div class="text-slate-700 dark:text-slate-400">
+                      Staff Engineer, Mumbai
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="carousel-item bg-white dark:bg-gray-800 p-6">
+            <div class="p-4">
+              <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+                <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-full rounded-full mx-auto object-cover" src="https://images.unsplash.com/photo-1609252509102-aa73ff792667?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="384" height="512">
+                <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                  <blockquote>
+                    <p class="text-lg font-medium dark:text-slate-100">
+                      "I’ve been using this site for a few months now, and it’s fantastic! The design is super clean, and it’s easy to find exactly what I need. The checkout process is fast and hassle-free every time."
+                    </p>
+                  </blockquote>
+                  <figcaption class="font-medium">
+                    <div class="text-sky-500 dark:text-sky-400">
+                      Mohit Tiwari
+                    </div>
+                    <div class="text-slate-700 dark:text-slate-400">
+                       Engineer, India
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+  
+          <!-- Slide 3 -->
+          <div class="carousel-item bg-white dark:bg-gray-800 p-6">
+            <!-- <img src="https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722163/AbhirajK/Abhirajk%20mykare.webp" alt="Slide 3" class="w-full h-64 object-cover rounded-md"> -->
+            <div class="p-4">
+              <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+                <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-full rounded-full mx-auto object-cover" src="./pf2.jpg" alt="" width="384" height="512">
+                <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                  <blockquote>
+                    <p class="text-lg font-medium dark:text-slate-100">
+                      "I found this website by chance, and it’s quickly become my go-to for all my shopping. Navigation is smooth, and I love how fast it loads. The product variety is also impressive!"
+                    </p>
+                  </blockquote>
+                  <figcaption class="font-medium">
+                    <div class="text-sky-500 dark:text-sky-400">
+                      Nikhil Nishad
+                    </div>
+                    <div class="text-slate-700 dark:text-slate-400">
+                      FrontEnd Engineer, Paris
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    
+    </div>
+  </body>
+  </html>
+
+  <!-- crousel end -->
+
+
+
+      <!-- footer -->
+      <div class="bg-gray-100" id="footer">
+        <div class="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
+            <div class="p-5 sm:w-2/12 ">
+                <div class="text-sm uppercase text-indigo-600 font-bold">Menu</div>
+                <ul class="fdd">
+                    <li class="my-2">
+                        <a class="hover:text-indigo-600" href="#">Home</a>
+                    </li>
+                    <li class="my-2">
+                        <a class="hover:text-indigo-600" href="#">Services</a>
+                    </li>
+                    <li class="my-2">
+                        <a class="hover:text-indigo-600" href="#">Products</a>
+                    </li>
+                    <li class="my-2">
+                        <a class="hover:text-indigo-600" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 sm:w-7/12 text-center">
+                <h3 class="font-bold text-xl text-indigo-600 mb-4">Componentity</h3>
+                <p class="text-gray-500 text-sm mb-10 pg">Componentity emphasizes reusable, modular components for scalable and efficient development. It ensures flexibility by isolating functionalities into smaller, manageable pieces. This approach enhances collaboration, testing, and future-proofing of projects.</p>
+            </div>
+            <div class="p-5 sm:w-3/12 divv">
+                <div class="text-sm uppercase text-indigo-600 font-bold">Contact Us</div>
+                <ul>
+                  <li class="my-2">
+                    <a class="hover:text-indigo-600 email" href="#">nikhilnishad92111@gmail.com</a>
+                </li>
+                   
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
+            <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+                <a href="#" class="w-6 mx-1">
+                    <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
+                        viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                        style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                      5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
+                      -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
+                      0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
+                      -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
+                      0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
+                      -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
+                      0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
+                      -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
+                      -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
+                      1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
+                      -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
+                      6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
+                      0.771,-0.67 1.054,-1.093Z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="w-6 mx-1">
+                    <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
+                        viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                        style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                      5.373,-12 12,-12c6.627,0 12,5.373
+                      12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
+                      0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
+                      -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="w-6 mx-1">
+                    <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
+                        viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                        style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <g id="Layer_1">
+                            <circle id="Oval" cx="12" cy="12" r="12"></circle>
+                            <path id="Shape" d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562
+                         -0.687,-0.937 -1.312,-0.937l0.125,0c0,0 -2.438,-0.375 -5.75,-0.375c-3.25,0
+                         -5.75,0.375 -5.75,0.375l0.125,0c-0.625,0 -1.125,0.375
+                         -1.313,0.937l0,0.063c0,0.062 0,0.125 -0.062,0.187c-0.063,0.625 -0.25,1.938
+                         -0.25,3.438c0,1.5 0.187,2.812 0.25,3.437c0,0.063 0,0.125
+                         0.062,0.188l0,0.062c0.188,0.563 0.688,0.938 1.313,0.938l-0.125,0c0,0
+                         2.437,0.375 5.75,0.375c3.25,0 5.75,-0.375 5.75,-0.375l-0.125,0c0.625,0
+                         1.125,-0.375 1.312,-0.938l0,-0.062c0,-0.063 0,-0.125
+                         0.063,-0.188c0.062,-0.625 0.25,-1.937 0.25,-3.437c0,-1.5 -0.125,-2.813
+                         -0.25,-3.438Zm-4.634,3.927l-3.201,2.315c-0.068,0.068 -0.137,0.068
+                         -0.205,0.068c-0.068,0 -0.136,0 -0.204,-0.068c-0.136,-0.068 -0.204,-0.204
+                         -0.204,-0.34l0,-4.631c0,-0.136 0.068,-0.273 0.204,-0.341c0.136,-0.068
+                         0.272,-0.068 0.409,0l3.201,2.316c0.068,0.068 0.136,0.204
+                         0.136,0.34c0.068,0.136 0,0.273 -0.136,0.341Z" style="fill: rgb(255, 255, 255);"></path>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" class="w-6 mx-1">
+                    <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
+                        viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                        style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
+                      3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
+                      -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
+                      -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
+                      -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
+                      0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
+                      3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
+                      -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
+                      -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
+                      1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
+                      -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
+                      -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
+                      0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
+                      0.4,1.5l0,4.5l2.9,0Z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="w-6 mx-1">
+                    <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
+                        viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                        style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Combined-Shape" d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
+                      -12,5.373 -12,12c0,6.627 5.373,12 12,12Zm6.591,-15.556l-0.722,0c-0.189,0
+                      -0.681,0.208 -0.681,0.385l0,6.422c0,0.178 0.492,0.323
+                      0.681,0.323l0.722,0l0,1.426l-4.675,0l0,-1.426l0.935,0l0,-6.655l-0.163,0l-2.251,8.081l-1.742,0l-2.222,-8.081l-0.168,0l0,6.655l0.935,0l0,1.426l-3.74,0l0,-1.426l0.519,0c0.203,0
+                      0.416,-0.145 0.416,-0.323l0,-6.422c0,-0.177 -0.213,-0.385
+                      -0.416,-0.385l-0.519,0l0,-1.426l4.847,0l1.583,5.704l0.042,0l1.598,-5.704l5.021,0l0,1.426Z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="my-5 last ">© Copyright 2023. All Rights Reserved.</div>
+        </div>
+    </div>
+
+    
+    <!-- Credit: Componentity.com -->
+
+</body>
+</html>

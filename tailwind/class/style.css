@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.aboutme{
+    font-size: 50px;
+    font-weight: 600;
+  color: #ffffff;
+}
+#adt{
+    background-color: #fff;
+}
+.aboutme span{
+    color: #22C55E;
+    /* text-decoration: underline; */
+    border-bottom: 5px solid;
+    
+
+}
+.abouthd{
+ font-size: 35px;
+ color: #ffffff;
+}
+.aboutmedpt{
+    font-size: 20px;
+    color: #b5b5b5;
+    font-weight:500 ;
+    font-family: italic;
+}
+.slillcnt{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.slillcnt li{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #f43f5e;
+    border-radius: 4px;
+    padding: 4px 10px;
+    border: 2px solid #f43f5e;
+    margin-bottom: 10px;
+    color: #b5b5b5;
+
+}
+.slillcnt li:hover{
+    background-color: #fff;
+    color: #f43f5e;
+    border: 2px solid #f43f5e;
+}
+
+#footer{
+    background-image: url("wave (2).svg");
+    height: 380px;
+    width: 100%;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px){
+    .abb{
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.abbb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    
+}
+.slillcnt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.pbb{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin: 15px;
+    gap: 10px;
+       
+}
+.pdd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 112vw;
+    
+}
+.fdd{
+    display: flex;
+  justify-content: space-evenly;
+    align-items: center;
+    
+}
+#footer{
+    background-image: url("wave (2).svg");
+    height: 380px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.pg{
+    margin: 30px;
+    color: #b5b5b5;
+}
+.email{
+    color: #b5b5b5;
+}
+.last{
+    color: #b5b5b5;
+}
+.divv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 112vw;
+  padding: 10px;
+    background-color: #08011b;
+    height: 80px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.cent{
+   
+    width: 112%;
+}
+#vv{
+  width: 112%;
+ display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#vvv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    left: 20px;
+
+}
+.bb{
+    border-top: 10px double rgb(255, 255, 255) ;
+    border-left: 10px double rgb(255, 255, 255);
+    border-bottom:10px double rgb(255, 255, 255) ;
+    border-right:  10px double rgb(255, 255, 255);
+   padding: 300px;
+    
+}
+}
